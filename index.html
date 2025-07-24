@@ -1,38 +1,171 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Hexxura - Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hexxura — Développeur Roblox & UI/UX</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Oswald', sans-serif;
+      background-color: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      padding: 80px 20px 40px;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 10px;
+    }
+
+    .projects, .infos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #fff;
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 0 10px #fff2;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
+    .card p, a {
+      color: #ddd;
+      font-size: 0.95rem;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    footer {
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      .projects, .infos {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
+    <img src="images/hexxura.png" alt="Hexxura Logo">
     <h1>Hexxura</h1>
-    <p>Projets | Univers | Créations Roblox</p>
+    <p>Développeur Roblox • UI/UX • Créateur d’univers digitaux</p>
   </header>
 
-  <section class="gallery">
-    <div class="card">
-      <img src="images/hexxura.png" alt="Hexxura Logo">
-      <h2>Hexxura</h2>
-      <p>Le hub principal de la team.</p>
+  <section>
+    <h2 class="section-title">Mes Projets</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="images/zeehood.png" alt="Zee Hood">
+        <h3>Zee Hood</h3>
+        <p>zee hood ont a repris les syteme d'un jeux et ont a poster le jeux et ont a ajouter plein de truc mais j'ai bien contribuer j'ai travailler surtout sur l'anticheat ont peut plus executer des anticheat sur notre jeux et il et encore actif en ce temps la </p>
+      </div>
+      <div class="card">
+        <img src="images/streetzwar.png" alt="Streetz War">
+        <h3>Streetz War</h3>
+        <p>1.5M joueurs j'ai un peux booser sur le jeux ont avait fait pas mal de actif en game mais apres j'ai arreter pour  autre chose </p>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="images/zeehood.png" alt="Zee Hood">
-      <h2>Zee Hood</h2>
-      <p>Un univers hood RP stylé et immersif.</p>
-    </div>
+  <section>
+    <h2 class="section-title">À Propos</h2>
+    <p>
+      salut je suis hexxura #ilies je suis un petit devlopper francais qui cherche encore a s'ameliorer j'ai traviller sur quelque projet et je cherche encore a m'ameliorer sur d'autre language ou sur d'autre endroit   
+    </p>
+  </section>
 
-    <div class="card">
-      <img src="images/streetzwar.png" alt="Streetz War">
-      <h2>Streetz War</h2>
-      <p>Du chaos, de l'action, et des crews 🔫</p>
+  <section>
+    <h2 class="section-title">Contact & Réseaux</h2>
+    <div class="infos">
+      <div class="card">
+        <h3>Roblox</h3>
+        <p><a href="https://www.roblox.com/users/0xMrDev/profile">@0xMrDev</a></p>
+      </div>
+      <div class="card">
+        <h3>Discord</h3>
+        <p>lvicekk</p>
+      </div>
+      <div class="card">
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/hexurrafr">https://github.com/hexurrafr</a></p>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Hexxura. Powered by GitHub Pages.</p>
+    &copy; CodeOpenSourceDevBy @hexxura#ilies
   </footer>
+
 </body>
 </html>
